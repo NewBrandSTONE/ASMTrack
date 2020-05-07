@@ -69,6 +69,7 @@ public class SensorsAnalyticsTransform extends Transform {
                         , jarInput.contentTypes
                         , jarInput.scopes
                         , Format.JAR)
+                // 将 input 的目录复制到 output 指定目录
                 FileUtil.copy(copyJarFile, dest)
             }
         }
